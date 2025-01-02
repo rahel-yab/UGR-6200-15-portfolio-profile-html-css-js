@@ -4,47 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahel-Yabebal Portfolio</title>
+    <link rel="stylesheet" href="../src/css/contact.css" />
   </head>
   <body>
-    <header>
-      <span>RY</span>
-      <div><img width="50" src="images/menu.png" alt="menu" /></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-2">
+        <span class="logo">RY</span>
+        <div class="menu">
+          <img width="50" src="images/menu.png" alt="menu" />
+        </div>
+        <nav>
+          <ul class="nav-bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
+    <main class="body">
       <section id="contact">
-        <h4>Want to contact me😊?</h4>
-        <div>
-          <p>You can use the addresses below.</p>
-          <p>Or you can send me a message using the Send Message button.</p>
+        <div class="contact-me">
+          <h4>Want to contact me😊?</h4>
+          <div>
+            <p>You can use the addresses below.</p>
+            <p>Or you can send me a message using the Send Message button.</p>
+          </div>
         </div>
-        <div>
-          <h5>LinkedIn</h5>
-          :
-          <a href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
-            >LinkedIn</a
+
+        <div class="contacts">
+          <span
+            >LinkedIn:
+            <a href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
+              >LinkedIn</a
+            ></span
           >
-          <h5>Email</h5>
-          : rahelyabebal@gmail.com
-          <h5>Telegram</h5>
-          : <a href="https://t.me/R_ah_el">@R_ah_el</a>
+          <span>Email: rahelyabebal@gmail.com</span>
+          <span>Telegram: <a href="https://t.me/R_ah_el">@R_ah_el</a></span>
         </div>
-        <div>
-          <img width="50" src="images/facebook_logo.png" alt="Facebook logo" />
-          <img width="50" src="images/twitter_logo.png" alt="Twitter logo" />
-          <img width="50" src="images/telegram_logo.png" alt="Telegram logo" />
-          <img width="50" src="images/email_logo.png" alt="Email logo" />
-          <button>Send Message</button>
+        <div class="address-logo">
+          <div>
+            <img
+              width="50"
+              src="images/facebook_logo.png"
+              alt="Facebook logo"
+            />
+            <img width="50" src="images/twitter_logo.png" alt="Twitter logo" />
+            <img
+              width="50"
+              src="images/telegram_logo.png"
+              alt="Telegram logo"
+            />
+            <img width="50" src="images/email_logo.png" alt="Email logo" />
+          </div>
+          <button id="send-message">Send Message</button>
         </div>
-        <div class="form">
+
+        <div class="form" id="message-form">
           <form action="send_message">
             <label for="fname">First Name</label>
             <input
@@ -66,28 +84,34 @@
               name="subject"
               placeholder="Write something.."
             ></textarea>
-            <input type="submit" value="Send" />
+            <input id="send" type="submit" value="Send" />
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="copyright">
-        <p>Copyright© 2024 Rahel Yabebal. All rights reserved.</p>
-      </div>
-      <div>
-        <p>Email: rahelyabebal@gmail.com</p>
-        <div class="logo">
-          <a
-            href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
-            target="_blank"
-            ><img width="30" src="images/linkedin_logo.png" alt="LinkedIn logo"
-          /></a>
-          <a href="https://github.com/rahel-yab" target="_blank"
-            ><img width="30" src="images/github_logo.png" alt="GitHub logo"
-          /></a>
+    <footer class="footer">
+      <div class="footer-2">
+        <div class="copyright">
+          <p>Copyright© 2024 Rahel Yabebal. All rights reserved.</p>
+        </div>
+        <div class="address">
+          <p>Address: rahelyabebal@gmail.com</p>
+          <div class="logo">
+            <a
+              href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
+              target="_blank"
+              ><img
+                width="30"
+                src="images/linkedin_logo.png"
+                alt="LinkedIn logo"
+            /></a>
+            <a href="https://github.com/rahel-yab" target="_blank"
+              ><img width="30" src="images/github_logo.png" alt="GitHub logo"
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
   </body>
+  <script src="../src/js/script.js"></script>
 </html>
