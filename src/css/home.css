@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-right: auto;
 }
@@ -43,16 +43,12 @@ nav li {
 }
 nav a {
   height: 100%;
-  padding: 0 27px;
+  padding: 0 30px;
   color: black;
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 25px;
-  opacity: 80%;
 }
-
 nav li a:hover {
   background-color: #afc3e9;
   transition: all ease-in-out;
@@ -134,7 +130,9 @@ p {
   align-items: center;
   padding: 0 2em;
 }
-
+.footer-2 p {
+  font-size: 17px;
+}
 .footer .logo img {
   margin-left: 1em;
 }
@@ -154,17 +152,15 @@ p {
     width: 80%;
     font-size: 18px;
   }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
 }
-
 @media (max-width: 48em) {
   /* 768px */
-
-  .hideonmobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
   .home {
     flex-direction: column;
     align-items: center;
@@ -173,22 +169,27 @@ p {
     width: 80%;
     font-size: 18px;
   }
+  h1 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 18px;
+  }
 }
 @media (max-width: 30em) {
   /* 480px */
-
-  .hideonmobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
   .home {
     flex-direction: column;
     align-items: center;
   }
   .download-button {
     width: 100%;
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
     font-size: 16px;
   }
 }

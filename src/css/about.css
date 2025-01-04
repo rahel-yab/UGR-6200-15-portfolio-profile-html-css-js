@@ -158,6 +158,9 @@ audio {
 .footer .logo img {
   margin-left: 1em;
 }
+.footer-2 p {
+  font-size: 17px;
+}
 
 @media (max-width: 64em) {
   /* 1024px */
