@@ -25,11 +25,12 @@ body {
   color: black;
   text-align: center;
   padding: 14px 16px;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
 }
 .nav-bar li a:hover {
   background-color: #afc3e9;
+  transition: all ease-in-out;
 }
 .logo {
   font-size: 30px;
@@ -124,6 +125,7 @@ input[type="submit"]:hover {
   height: 50px;
   padding: 10px 0;
   margin-top: 5em;
+  opacity: 0.5;
 }
 .footer-2 {
   display: flex;
