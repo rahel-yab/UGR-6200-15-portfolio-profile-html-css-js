@@ -53,6 +53,11 @@ nav li a:hover {
   background-color: #afc3e9;
   transition: all ease-in-out;
 }
+li.active a {
+  color: black;
+  background-color: #bfcfed;
+  border-radius: 5px;
+}
 .side-bar {
   position: fixed;
   top: 0;
@@ -102,6 +107,7 @@ nav li a:hover {
   color: white;
   border-radius: 12px;
   border: none;
+  font-size: 1em;
 }
 #send-message:hover {
   background-color: #afc3e9;

@@ -53,6 +53,11 @@ nav li a:hover {
   background-color: #afc3e9;
   transition: all ease-in-out;
 }
+li.active a {
+  color: black;
+  background-color: #bfcfed;
+  border-radius: 5px;
+}
 .side-bar {
   position: fixed;
   top: 0;
@@ -88,11 +93,13 @@ nav li a:hover {
 h1 {
   font-size: 50px;
   opacity: 80%;
-  margin: 12px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 p {
-  font-size: 25px;
+  font-size: 17px;
   opacity: 80%;
+  line-height: 30px;
 }
 .image1 {
   border-radius: 200px;
@@ -117,6 +124,7 @@ p {
   background-color: #afc3e9;
   color: black;
 }
+
 .footer {
   background-color: #afc3e9;
   color: black;

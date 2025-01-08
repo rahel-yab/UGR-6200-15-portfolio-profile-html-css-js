@@ -53,6 +53,11 @@ nav li a:hover {
   background-color: #afc3e9;
   transition: all ease-in-out;
 }
+li.active a {
+  color: black;
+  background-color: #bfcfed;
+  border-radius: 5px;
+}
 .side-bar {
   position: fixed;
   top: 0;
@@ -97,15 +102,13 @@ nav li a:hover {
 .education {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  line-height: 30px;
 }
-
-.education p {
-  width: 60%;
+.education h2 {
+  margin: 20px;
 }
-
 .education img {
-  width: 35%;
+  width: 40%;
   height: auto;
   margin-left: 2em;
   border-radius: 0.5em;
@@ -124,21 +127,38 @@ nav li a:hover {
   margin: 1em 0;
   box-sizing: border-box;
 }
-.adventure img {
+.adventure div {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.adventure img {
   width: 100%;
   height: auto;
+  border-radius: 0.5em;
 }
-.hobby video,
-.interest audio {
+
+.hobby video {
   width: 100%;
   height: auto;
   margin-top: 1em;
 }
 audio {
-  color: #cfdbf2;
-  padding: 24px 33px;
+  width: 300px;
+  outline: none;
+  margin-top: 20px;
+  background-color: #afc3e9;
+}
+
+audio::-webkit-media-controls {
+  background-color: #afc3e9;
+}
+
+audio::-webkit-media-controls-enclosure {
+  padding: 10px;
 }
 
 .footer {
@@ -170,6 +190,9 @@ audio {
   .menu-button {
     display: block;
   }
+  .education h2 {
+    margin: 15px;
+  }
 }
 
 @media (max-width: 48em) {
@@ -194,6 +217,15 @@ audio {
   .menu-button {
     display: block;
   }
+  .footer-2 p {
+    font-size: 14px;
+  }
+  .footer-2 {
+    padding: 0 1.5em;
+  }
+  .education h2 {
+    margin: 13px;
+  }
 }
 
 @media (max-width: 30em) {
@@ -203,10 +235,19 @@ audio {
   .interest {
     min-width: 100%;
   }
+  .education h2 {
+    margin: 10px;
+  }
   .hideonmobile {
     display: none;
   }
   .menu-button {
     display: block;
+  }
+  .footer-2 p {
+    font-size: 11px;
+  }
+  .footer-2 {
+    padding: 0 1em;
   }
 }

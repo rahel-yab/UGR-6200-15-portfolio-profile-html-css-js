@@ -19,14 +19,16 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
+            <li class="active"><a href="skills.html">Skills</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <ul class="nav-bar">
             <li class="hideonmobile"><a href="index.html">Home</a></li>
             <li class="hideonmobile"><a href="about.html">About</a></li>
             <li class="hideonmobile"><a href="projects.html">Projects</a></li>
-            <li class="hideonmobile"><a href="skills.html">Skills</a></li>
+            <li class="hideonmobile active">
+              <a href="skills.html">Skills</a>
+            </li>
             <li class="hideonmobile"><a href="contact.html">Contact</a></li>
             <li class="menu-button" onClick="showSidebar()">
               <a href="#"
@@ -39,8 +41,8 @@
     </header>
     <main>
       <section id="skills">
-        <h2>Skills</h2>
         <div>
+          <h2>Skills</h2>
           <p>
             My skills mentioned in the table are the skills I have acquired
             through various learning experiences and practical applications.
@@ -55,10 +57,12 @@
             appealing and user-friendly web interfaces that provide an excellent
             user experience.
           </p>
+        </div>
+        <div>
           <table>
             <tr>
-              <th>Skills</th>
-              <th>Skills</th>
+              <th></th>
+              <th></th>
             </tr>
             <tr>
               <td>Python Programming</td>
@@ -72,28 +76,35 @@
         </div>
       </section>
       <section id="learning-journey">
-        <h2>Learning Journey</h2>
-        <p>
-          The skills of HTML, CSS, and JavaScript are self-taught through doing
-          projects and watching videos and also some online classes. Learning on
-          our own can be challenging at times. However, with dedication and
-          effort, we can become good at what we're studying.
-        </p>
-        <p>
-          I took an introductory Python course at Addis Ababa University (AAU),
-          which provided me with a solid foundation in programming concepts and
-          practices. However, my learning did not stop there. I am currently
-          enhancing my Python skills through self-study, working on various
-          projects and challenges to deepen my understanding and proficiency in
-          the language.
-        </p>
         <div>
-          <img src="images/python.png" alt="Image of Python" width="300" />
-          <img
-            src="images/web-development.png"
-            alt="Image of web development"
-            width="400"
-          />
+          <h2>Learning Journey</h2>
+          <p>
+            The skills of HTML, CSS, and JavaScript are self-taught through
+            doing projects and watching videos and also some online classes.
+            Learning on our own can be challenging at times. However, with
+            dedication and effort, we can become good at what we're studying.
+          </p>
+          <p>
+            I took an introductory Python course at Addis Ababa University
+            (AAU), which provided me with a solid foundation in programming
+            concepts and practices. However, my learning did not stop there. I
+            am currently enhancing my Python skills through self-study, working
+            on various projects and challenges to deepen my understanding and
+            proficiency in the language.
+          </p>
+        </div>
+
+        <div class="images">
+          <div>
+            <img src="images/python.png" alt="Image of Python" width="300" />
+          </div>
+          <div>
+            <img
+              src="images/web-development.png"
+              alt="Image of web development"
+              width="400"
+            />
+          </div>
         </div>
       </section>
     </main>
