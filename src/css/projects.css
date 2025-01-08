@@ -149,6 +149,74 @@ main {
   .education h2 {
     margin: 15px;
   }
+  .header {
+    padding: 0.7em 0;
+  }
+
+  .header-2 {
+    padding: 0 1.7em;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  nav li {
+    height: 42px;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 25px;
+  }
+  li.active a {
+    border-radius: 4px;
+  }
+  .side-bar {
+    width: 220px;
+  }
+
+  /* Main styles */
+  main {
+    padding: 17px;
+  }
+  figcaption {
+    font-size: 24px;
+  }
+
+  #projects {
+    gap: 17px; /* Space between items */
+  }
+
+  .project {
+    border-radius: 7px; /* Rounded corners */
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .project img {
+    height: 150px;
+  }
+
+  /* Hover effect */
+  .project:hover img {
+    transform: scale(1); /* Scale image on hover */
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 0.7em 0;
+  }
+
+  .footer-2 {
+    padding: 0 1.7em;
+  }
+
+  .footer .logo img {
+    margin-left: 0.7em;
+  }
+  .footer-2 p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 48em) {
@@ -160,11 +228,73 @@ main {
   .menu-button {
     display: block;
   }
+  .header {
+    padding: 0.5em 0;
+  }
+
+  .header-2 {
+    padding: 0 1.5em;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  nav li {
+    height: 40px;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  li.active a {
+    border-radius: 3px;
+  }
+  .side-bar {
+    width: 200px;
+  }
+
+  /* Main styles */
+  main {
+    padding: 13px;
+  }
+  figcaption {
+    font-size: 17px;
+  }
+  #projects {
+    gap: 14px; /* Space between items */
+  }
+
+  .project {
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .project img {
+    height: 120px; /* Fixed height for uniformity */
+  }
+
+  /* Hover effect */
+  .project:hover img {
+    transform: scale(0.8); /* Scale image on hover */
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 0.5em 0;
+  }
+
+  .footer-2 {
+    padding: 0 2em;
+  }
+
+  .footer .logo img {
+    margin-left: 0.5em;
+  }
   .footer-2 p {
     font-size: 14px;
-  }
-  .footer-2 {
-    padding: 0 1.5em;
   }
 }
 
@@ -182,5 +312,8 @@ main {
   }
   .footer-2 {
     padding: 0 1em;
+  }
+  figcaption {
+    font-size: 14px;
   }
 }
