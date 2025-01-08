@@ -84,14 +84,27 @@ li.active a {
 .menu-button {
   display: none;
 }
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  font-size: larger;
+}
 .contacts {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  line-height: 40px;
+  opacity: 0.8;
 }
+
 .contact-me {
   text-align: center;
-  color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  margin: 20px;
+  line-height: 40px;
 }
 
 .contacts span {
@@ -113,6 +126,7 @@ li.active a {
   background-color: #afc3e9;
   color: black;
   font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.1);
 }
 form {
   background-color: #cfdbf2;
@@ -163,7 +177,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   gap: 9em;
-  margin: 0.3em;
+  margin: 1em;
 }
 .address-logo img {
   max-width: 50px;
@@ -173,6 +187,7 @@ input[type="submit"]:hover {
   color: black;
   padding: 1em 0;
   opacity: 0.7;
+  margin-top: 70px;
 }
 
 .footer-2 {
@@ -188,7 +203,7 @@ input[type="submit"]:hover {
 .footer-2 p {
   font-size: 17px;
 }
-
+/* Responsive styles */
 @media (max-width: 64em) {
   /* 1024px */
   .hideonmobile {
@@ -197,13 +212,76 @@ input[type="submit"]:hover {
   .menu-button {
     display: block;
   }
-  .home {
-    flex-direction: column;
-    align-items: center;
+  .education h2 {
+    margin: 15px;
   }
-  .download-button {
-    width: 80%;
-    font-size: 18px;
+  .header {
+    padding: 0.7em 0;
+  }
+
+  .header-2 {
+    padding: 0 1.7em;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  nav li {
+    height: 42px;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 25px;
+  }
+  li.active a {
+    border-radius: 4px;
+  }
+  .side-bar {
+    width: 220px;
+  }
+
+  /* Main styles */
+  main {
+    padding: 17px;
+  }
+  figcaption {
+    font-size: 24px;
+  }
+
+  #projects {
+    gap: 17px; /* Space between items */
+  }
+
+  .project {
+    border-radius: 7px; /* Rounded corners */
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .project img {
+    height: 150px;
+  }
+
+  /* Hover effect */
+  .project:hover img {
+    transform: scale(1); /* Scale image on hover */
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 0.7em 0;
+  }
+
+  .footer-2 {
+    padding: 0 1.7em;
+  }
+
+  .footer .logo img {
+    margin-left: 0.7em;
+  }
+  .footer-2 p {
+    font-size: 15px;
   }
 }
 
@@ -216,15 +294,55 @@ input[type="submit"]:hover {
   .menu-button {
     display: block;
   }
-  .home {
-    flex-direction: column;
-    align-items: center;
+  .header {
+    padding: 0.5em 0;
   }
-  .download-button {
-    width: 80%;
-    font-size: 18px;
+
+  .header-2 {
+    padding: 0 1.5em;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  nav li {
+    height: 40px;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  li.active a {
+    border-radius: 3px;
+  }
+  .side-bar {
+    width: 200px;
+  }
+
+  /* Main styles */
+  main {
+    padding: 13px;
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 0.5em 0;
+  }
+
+  .footer-2 {
+    padding: 0 2em;
+  }
+
+  .footer .logo img {
+    margin-left: 0.5em;
+  }
+  .footer-2 p {
+    font-size: 14px;
   }
 }
+
 @media (max-width: 30em) {
   /* 480px */
 
@@ -234,12 +352,10 @@ input[type="submit"]:hover {
   .menu-button {
     display: block;
   }
-  .home {
-    flex-direction: column;
-    align-items: center;
+  .footer-2 p {
+    font-size: 11px;
   }
-  .download-button {
-    width: 100%;
-    font-size: 16px;
+  .footer-2 {
+    padding: 0 1em;
   }
 }
