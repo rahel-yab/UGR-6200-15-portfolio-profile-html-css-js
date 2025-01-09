@@ -4,25 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahel-Yabebal Portfolio</title>
+    <link rel="stylesheet" href="../src/css/skills.css" />
   </head>
   <body>
-    <header>
-      <span>RY</span>
-      <div><img width="50" src="images/menu.png" alt="menu" /></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-2">
+        <span class="logo">RY</span>
+
+        <nav>
+          <ul class="side-bar">
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><img height="30" src="images/close.png" alt="close"
+              /></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="active"><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav-bar">
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="about.html">About</a></li>
+            <li class="hideonmobile"><a href="projects.html">Projects</a></li>
+            <li class="hideonmobile active">
+              <a href="skills.html">Skills</a>
+            </li>
+            <li class="hideonmobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onClick="showSidebar()">
+              <a href="#"
+                ><img class="menu" width="50" src="images/menu.png" alt="menu"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="skills">
-        <h2>Skills</h2>
-        <div>
+        <div class="skill">
+          <h2>Skills</h2>
           <p>
             My skills mentioned in the table are the skills I have acquired
             through various learning experiences and practical applications.
@@ -37,10 +59,12 @@
             appealing and user-friendly web interfaces that provide an excellent
             user experience.
           </p>
+        </div>
+        <div>
           <table>
             <tr>
-              <th>Skills</th>
-              <th>Skills</th>
+              <th>programming</th>
+              <th>Front-end</th>
             </tr>
             <tr>
               <td>Python Programming</td>
@@ -54,48 +78,61 @@
         </div>
       </section>
       <section id="learning-journey">
-        <h2>Learning Journey</h2>
-        <p>
-          The skills of HTML, CSS, and JavaScript are self-taught through doing
-          projects and watching videos and also some online classes. Learning on
-          our own can be challenging at times. However, with dedication and
-          effort, we can become good at what we're studying.
-        </p>
-        <p>
-          I took an introductory Python course at Addis Ababa University (AAU),
-          which provided me with a solid foundation in programming concepts and
-          practices. However, my learning did not stop there. I am currently
-          enhancing my Python skills through self-study, working on various
-          projects and challenges to deepen my understanding and proficiency in
-          the language.
-        </p>
-        <div>
-          <img src="images/python.png" alt="Image of Python" width="300" />
-          <img
-            src="images/web-development.png"
-            alt="Image of web development"
-            width="400"
-          />
+        <div class="skill">
+          <h2>Learning Journey</h2>
+          <p>
+            The skills of HTML, CSS, and JavaScript are self-taught through
+            doing projects and watching videos and also some online classes.
+            Learning on our own can be challenging at times. However, with
+            dedication and effort, we can become good at what we're studying.
+          </p>
+          <p>
+            I took an introductory Python course at Addis Ababa University
+            (AAU), which provided me with a solid foundation in programming
+            concepts and practices. However, my learning did not stop there. I
+            am currently enhancing my Python skills through self-study, working
+            on various projects and challenges to deepen my understanding and
+            proficiency in the language.
+          </p>
+        </div>
+
+        <div class="images">
+          <div>
+            <img src="images/python.png" alt="Image of Python" width="300" />
+          </div>
+          <div>
+            <img
+              src="images/web-development.png"
+              alt="Image of web development"
+              width="400"
+            />
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="copyright">
-        <p>Copyright© 2024 Rahel Yabebal. All rights reserved.</p>
-      </div>
-      <div>
-        <p>Address: rahelyabebal@gmail.com</p>
-        <div class="logo">
-          <a
-            href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
-            target="_blank"
-            ><img width="30" src="images/linkedin_logo.png" alt="LinkedIn logo"
-          /></a>
-          <a href="https://github.com/rahel-yab" target="_blank"
-            ><img width="30" src="images/github_logo.png" alt="GitHub logo"
-          /></a>
+    <footer class="footer">
+      <div class="footer-2">
+        <div class="copyright">
+          <p>Copyright© 2024 Rahel Yabebal. All rights reserved.</p>
+        </div>
+        <div class="address">
+          <p>Address: rahelyabebal@gmail.com</p>
+          <div class="logo">
+            <a
+              href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
+              target="_blank"
+              ><img
+                width="30"
+                src="images/linkedin_logo.png"
+                alt="LinkedIn logo"
+            /></a>
+            <a href="https://github.com/rahel-yab" target="_blank"
+              ><img width="30" src="images/github_logo.png" alt="GitHub logo"
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="../src/js/script.js"></script>
   </body>
 </html>

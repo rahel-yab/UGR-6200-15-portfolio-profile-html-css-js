@@ -4,85 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahel-Yabebal Portfolio</title>
+    <link rel="stylesheet" href="../src/css/about.css" />
   </head>
   <body>
-    <header>
-      <span>RY</span>
-      <div><img width="50" src="images/menu.png" alt="menu" /></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-2">
+        <span class="logo">RY</span>
+
+        <nav>
+          <ul class="side-bar">
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><img height="30" src="images/close.png" alt="close"
+              /></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav-bar">
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile active"><a href="about.html">About</a></li>
+            <li class="hideonmobile"><a href="projects.html">Projects</a></li>
+            <li class="hideonmobile"><a href="skills.html">Skills</a></li>
+            <li class="hideonmobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onClick="showSidebar()">
+              <a href="#"
+                ><img class="menu" width="50" src="images/menu.png" alt="menu"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section id="about">
-        <h1>About Me</h1>
-        <article class="education">
-          <h2>Education</h2>
+      <div class="container">
+        <section class="education">
           <div>
+            <h2>Education</h2>
             <p>
               I am Rahel Yabebal, a 3rd-year software engineering student. I
               finished high school at Lideta Catholic Cathedral School, and now
-              I am studying at Addis Ababa University (AAU).
+              I am studying at Addis Ababa University (AAU). I believe in
+              continuous learning and collaboration, and I am always looking for
+              ways to expand my knowledge and take on new challenges. Whether
+              it's building user-friendly applications or tackling complex
+              coding contests, I am dedicated to growth and innovation in the
+              tech field. Feel free to explore my projects and reach out if you
+              would like to connect!
             </p>
           </div>
-          <div>
-            <p>
-              I believe in continuous learning and collaboration, and I am
-              always looking for ways to expand my knowledge and take on new
-              challenges. Whether it's building user-friendly applications or
-              tackling complex coding contests, I am dedicated to growth and
-              innovation in the tech field. Feel free to explore my projects and
-              reach out if you would like to connect!
-            </p>
-            <img src="images/aau.jpg" width="400" alt="Image of AAU" />
+
+          <img src="images/aau.jpg" alt="Image of AAU" />
+        </section>
+        <section class="about">
+          <div class="adventure">
+            <h3>Adventures</h3>
+            <p>I want to try these adventures</p>
+            <div>
+              <img src="images/image1(2).jpg" alt="Skydiving" />
+            </div>
+            <div><img src="images/surfing_pic.jpg" alt="Surfing" /></div>
           </div>
-        </article>
-        <article class="adventure">
-          <h3>Adventures</h3>
-          <p>I want to try these adventures:</p>
-          <div>
-            <img width="400" src="images/image1(2).jpg" alt="Skydiving" />
-            <img width="400" src="images/surfing_pic.jpg" alt="Surfing" />
+          <div class="hobby">
+            <h3>Hobby</h3>
+            <video src="video/reading.mp4" controls></video>
+            <p>Reading books is one of my hobbies.</p>
           </div>
-        </article>
-        <article class="hobby">
-          <h3>Hobby</h3>
-          <video width="400" src="video/reading.mp4" controls></video>
-          <p>Reading books is one of my hobbies.</p>
-        </article>
-        <article class="interest">
-          <h3>Interest</h3>
-          <audio controls>
-            <source src="audio/music.mp3" type="audio/mpeg" />
-            Your browser does not support the audio tag.
-          </audio>
-          <p>I enjoy listening to music.</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <div class="copyright">
-        <p>Copyright© 2024 Rahel Yabebal. All rights reserved.</p>
+          <div class="interest">
+            <h3>Interest</h3>
+            <audio controls>
+              <source src="../src/audio/music.mp3" type="audio/mpeg" />
+              Your browser does not support the audio tag.
+            </audio>
+            <p>I enjoy listening to music.</p>
+          </div>
+        </section>
       </div>
-      <div>
-        <p>Address: rahelyabebal@gmail.com</p>
-        <div class="logo">
-          <a
-            href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
-            target="_blank"
-            ><img width="30" src="images/linkedin_logo.png" alt="LinkedIn logo"
-          /></a>
-          <a href="https://github.com/rahel-yab" target="_blank"
-            ><img width="30" src="images/github_logo.png" alt="GitHub logo"
-          /></a>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-2">
+        <div class="copyright">
+          <p>Copyright© 2024 Rahel Yabebal. All rights reserved.</p>
+        </div>
+        <div class="address">
+          <p>Address: rahelyabebal@gmail.com</p>
+          <div class="logo">
+            <a
+              href="https://www.linkedin.com/in/rahel-yabebal-80795b2ba/"
+              target="_blank"
+              ><img
+                width="30"
+                src="images/linkedin_logo.png"
+                alt="LinkedIn logo"
+            /></a>
+            <a href="https://github.com/rahel-yab" target="_blank"
+              ><img width="30" src="images/github_logo.png" alt="GitHub logo"
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="../src/js/script.js"></script>
   </body>
 </html>

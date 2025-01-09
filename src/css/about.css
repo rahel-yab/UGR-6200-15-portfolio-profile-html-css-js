@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  background: #bfcfed;
+  font-family: "Roboto";
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #cfdbf2;
+  color: black;
+  padding: 1em 0;
+}
+
+.header-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav li a:hover {
+  background-color: #afc3e9;
+  transition: all ease-in-out;
+}
+li.active a {
+  color: black;
+  background-color: #bfcfed;
+  border-radius: 5px;
+}
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #bfcfed;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.side-bar li {
+  width: 100%;
+}
+.side-bar a {
+  width: 100%;
+}
+.side-bar a:hover {
+  background-color: #afc3e9;
+}
+/* main styles */
+
+.menu-button {
+  display: none;
+}
+.container {
+  padding: 2em;
+}
+
+.education,
+.adventure,
+.hobby,
+.interest {
+  background-color: #bfcfed;
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+.education h2 {
+  margin: 20px;
+}
+.education img {
+  width: 40%;
+  height: auto;
+  margin-left: 2em;
+  border-radius: 0.5em;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.adventure,
+.hobby,
+.interest {
+  flex: 1;
+  min-width: calc(33.33% - 2em);
+  margin: 1em 0;
+  box-sizing: border-box;
+}
+.adventure div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.adventure img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.hobby video {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+audio {
+  width: 300px;
+  outline: none;
+  margin-top: 20px;
+  background-color: #afc3e9;
+}
+
+audio::-webkit-media-controls {
+  background-color: #afc3e9;
+}
+
+audio::-webkit-media-controls-enclosure {
+  padding: 10px;
+}
+
+.footer {
+  background-color: #afc3e9;
+  color: black;
+  padding: 1em 0;
+  opacity: 0.7;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.footer .logo img {
+  margin-left: 1em;
+}
+.footer-2 p {
+  font-size: 17px;
+}
+
+@media (max-width: 64em) {
+  /* 1024px */
+  .hideonmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  .education h2 {
+    margin: 15px;
+  }
+  /* main styles */
+  .container {
+    padding: 1.7em;
+  }
+
+  .education,
+  .adventure,
+  .hobby,
+  .interest {
+    padding: 1.8em;
+    margin-bottom: 1.8em;
+  }
+  p {
+    font-size: 24px;
+  }
+  .education {
+    line-height: 28px;
+  }
+  .education h2 {
+    margin: 17px;
+  }
+  .education img {
+    width: 40%;
+    height: auto;
+    margin-left: 1.7em;
+    border-radius: 0.4em;
+  }
+  .about {
+    gap: 0.8em;
+  }
+
+  .adventure,
+  .hobby,
+  .interest {
+    margin: 0.8em 0;
+  }
+  .adventure div {
+    margin: 0.8em 0;
+  }
+
+  .hobby video {
+    margin-top: 0.8em;
+  }
+  audio {
+    width: 270px;
+
+    margin-top: 20px;
+  }
+
+  .footer {
+    background-color: #afc3e9;
+    color: black;
+    padding: 1em 0;
+    opacity: 0.7;
+  }
+
+  .footer-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  .footer .logo img {
+    margin-left: 1em;
+  }
+  .footer-2 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 48em) {
+  /* 768px */
+  .education {
+    flex-direction: column;
+    text-align: center;
+  }
+  .education p,
+  .education img {
+    width: 100%;
+    margin: 0;
+  }
+  .adventure,
+  .hobby,
+  .interest {
+    min-width: 45%;
+  }
+  .hideonmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  /* main styles */
+  .container {
+    padding: 1.7em;
+  }
+
+  .education,
+  .adventure,
+  .hobby,
+  .interest {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  p {
+    font-size: 17px;
+  }
+  .education {
+    line-height: 24px;
+  }
+  .education h2 {
+    margin: 13px;
+  }
+  .education img {
+    width: 80%;
+    height: auto;
+    margin-left: 1.5em;
+    border-radius: 0.4em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about {
+    gap: 0.7em;
+  }
+
+  .adventure,
+  .hobby,
+  .interest {
+    margin: 0.7em 0;
+  }
+  .adventure div {
+    margin: 0.7em 0;
+  }
+
+  .hobby video {
+    margin-top: 0.7em;
+  }
+  audio {
+    width: 250px;
+
+    margin-top: 20px;
+  }
+
+  .footer {
+    padding: 0.8em 0;
+  }
+
+  .footer .logo img {
+    margin-left: 1em;
+  }
+
+  .footer-2 p {
+    font-size: 14px;
+  }
+  .footer-2 {
+    padding: 0 1.5em;
+  }
+}
+
+@media (max-width: 30em) {
+  /* 480px */
+  .adventure,
+  .hobby,
+  .interest {
+    min-width: 100%;
+  }
+  .education h2 {
+    margin: 10px;
+  }
+  .hideonmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  /* main styles */
+  .container {
+    padding: 1.7em;
+  }
+
+  .education,
+  .adventure,
+  .hobby,
+  .interest {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  p {
+    font-size: 14px;
+  }
+  .education {
+    line-height: 24px;
+  }
+  .education h2 {
+    margin: 13px;
+  }
+  .education img {
+    width: 80%;
+    height: auto;
+    margin-left: 1.5em;
+    border-radius: 0.4em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about {
+    gap: 0.5em;
+  }
+
+  .adventure,
+  .hobby,
+  .interest {
+    margin: 0.7em 0;
+  }
+  .adventure div {
+    margin: 0.5em 0;
+  }
+
+  .hobby video {
+    margin-top: 0.5em;
+  }
+  audio {
+    width: 200px;
+
+    margin-top: 17px;
+  }
+  .footer-2 p {
+    font-size: 11px;
+  }
+  .footer-2 {
+    padding: 0 1em;
+  }
+}
