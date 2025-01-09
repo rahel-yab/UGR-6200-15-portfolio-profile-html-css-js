@@ -84,6 +84,7 @@ li.active a {
 .menu-button {
   display: none;
 }
+/* main styles */
 .home {
   display: flex;
   justify-content: space-around;
@@ -100,6 +101,10 @@ p {
   font-size: 17px;
   opacity: 80%;
   line-height: 30px;
+}
+.container {
+  padding: 2em;
+  text-align: center;
 }
 .image1 {
   border-radius: 200px;
@@ -152,52 +157,129 @@ p {
   .menu-button {
     display: block;
   }
+  /* main styles */
   .home {
-    flex-direction: column;
-    align-items: center;
+    display: inline;
+  }
+  .home p {
+    width: 90%;
+    text-align: center;
+    margin: 17px;
+  }
+  .image1 {
+    width: 80%;
   }
   .download-button {
-    width: 80%;
-    font-size: 18px;
+    padding: 13px 21px;
+    font-size: 19px;
+    margin-left: 20%;
+    margin: 45px;
   }
-  h1 {
-    font-size: 40px;
+  /*footer styles */
+  .footer {
+    background-color: #afc3e9;
+    color: black;
+    padding: 1em 0;
+    opacity: 0.7;
   }
-  p {
+
+  .footer-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  .footer .logo img {
+    margin-left: 1em;
+  }
+  .footer-2 p {
     font-size: 20px;
   }
 }
 @media (max-width: 48em) {
   /* 768px */
+  .hideonmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  /* main styles */
   .home {
-    flex-direction: column;
-    align-items: center;
+    display: inline;
+  }
+  .home p {
+    width: 90%;
+    text-align: center;
+    margin: 15px;
+  }
+  .image1 {
+    width: 70%;
   }
   .download-button {
-    width: 80%;
+    padding: 11px 24px;
+    font-size: 17px;
+    margin-left: 20%;
+    margin: 40px;
+  }
+
+  /*footer styles */
+  .footer {
+    padding: 0.5em 0;
+  }
+
+  .footer .logo img {
+    margin-left: 0.8em;
+  }
+
+  .footer-2 p {
     font-size: 18px;
   }
-  h1 {
-    font-size: 35px;
-  }
-  p {
-    font-size: 18px;
+  .footer-2 {
+    padding: 0 1.3em;
   }
 }
+
 @media (max-width: 30em) {
   /* 480px */
+  .hideonmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  /* main styles */
   .home {
-    flex-direction: column;
-    align-items: center;
+    display: inline;
+  }
+  .home p {
+    width: 90%;
+    text-align: center;
+    margin: 15px;
+  }
+  .image1 {
+    width: 80%;
   }
   .download-button {
-    width: 100%;
+    padding: 11px 19px;
     font-size: 16px;
+    margin-left: 20%;
+    margin: 38px;
   }
-  h1 {
-    font-size: 30px;
+  /*footer styles */
+  .footer {
+    padding: 0.4em 0;
   }
-  p {
-    font-size: 16px;
+
+  .footer .logo img {
+    margin-left: 0.7em;
+  }
+
+  .footer-2 p {
+    font-size: 15px;
+  }
+  .footer-2 {
+    padding: 0 1.1em;
   }
 }

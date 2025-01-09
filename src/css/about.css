@@ -81,6 +81,8 @@ li.active a {
 .side-bar a:hover {
   background-color: #afc3e9;
 }
+/* main styles */
+
 .menu-button {
   display: none;
 }
@@ -193,6 +195,75 @@ audio::-webkit-media-controls-enclosure {
   .education h2 {
     margin: 15px;
   }
+  /* main styles */
+  .container {
+    padding: 1.7em;
+  }
+
+  .education,
+  .adventure,
+  .hobby,
+  .interest {
+    padding: 1.8em;
+    margin-bottom: 1.8em;
+  }
+  p {
+    font-size: 24px;
+  }
+  .education {
+    line-height: 28px;
+  }
+  .education h2 {
+    margin: 17px;
+  }
+  .education img {
+    width: 40%;
+    height: auto;
+    margin-left: 1.7em;
+    border-radius: 0.4em;
+  }
+  .about {
+    gap: 0.8em;
+  }
+
+  .adventure,
+  .hobby,
+  .interest {
+    margin: 0.8em 0;
+  }
+  .adventure div {
+    margin: 0.8em 0;
+  }
+
+  .hobby video {
+    margin-top: 0.8em;
+  }
+  audio {
+    width: 270px;
+
+    margin-top: 20px;
+  }
+
+  .footer {
+    background-color: #afc3e9;
+    color: black;
+    padding: 1em 0;
+    opacity: 0.7;
+  }
+
+  .footer-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  .footer .logo img {
+    margin-left: 1em;
+  }
+  .footer-2 p {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 48em) {
@@ -217,14 +288,70 @@ audio::-webkit-media-controls-enclosure {
   .menu-button {
     display: block;
   }
+  /* main styles */
+  .container {
+    padding: 1.7em;
+  }
+
+  .education,
+  .adventure,
+  .hobby,
+  .interest {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  p {
+    font-size: 17px;
+  }
+  .education {
+    line-height: 24px;
+  }
+  .education h2 {
+    margin: 13px;
+  }
+  .education img {
+    width: 80%;
+    height: auto;
+    margin-left: 1.5em;
+    border-radius: 0.4em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about {
+    gap: 0.7em;
+  }
+
+  .adventure,
+  .hobby,
+  .interest {
+    margin: 0.7em 0;
+  }
+  .adventure div {
+    margin: 0.7em 0;
+  }
+
+  .hobby video {
+    margin-top: 0.7em;
+  }
+  audio {
+    width: 250px;
+
+    margin-top: 20px;
+  }
+
+  .footer {
+    padding: 0.8em 0;
+  }
+
+  .footer .logo img {
+    margin-left: 1em;
+  }
+
   .footer-2 p {
     font-size: 14px;
   }
   .footer-2 {
     padding: 0 1.5em;
-  }
-  .education h2 {
-    margin: 13px;
   }
 }
 
@@ -243,6 +370,56 @@ audio::-webkit-media-controls-enclosure {
   }
   .menu-button {
     display: block;
+  }
+  /* main styles */
+  .container {
+    padding: 1.7em;
+  }
+
+  .education,
+  .adventure,
+  .hobby,
+  .interest {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  p {
+    font-size: 14px;
+  }
+  .education {
+    line-height: 24px;
+  }
+  .education h2 {
+    margin: 13px;
+  }
+  .education img {
+    width: 80%;
+    height: auto;
+    margin-left: 1.5em;
+    border-radius: 0.4em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about {
+    gap: 0.5em;
+  }
+
+  .adventure,
+  .hobby,
+  .interest {
+    margin: 0.7em 0;
+  }
+  .adventure div {
+    margin: 0.5em 0;
+  }
+
+  .hobby video {
+    margin-top: 0.5em;
+  }
+  audio {
+    width: 200px;
+
+    margin-top: 17px;
   }
   .footer-2 p {
     font-size: 11px;

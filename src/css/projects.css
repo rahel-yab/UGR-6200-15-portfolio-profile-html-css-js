@@ -204,18 +204,24 @@ main {
 
   /* Footer styles */
   .footer {
-    padding: 0.7em 0;
+    background-color: #afc3e9;
+    color: black;
+    padding: 1em 0;
+    opacity: 0.7;
   }
 
   .footer-2 {
-    padding: 0 1.7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
   }
 
   .footer .logo img {
-    margin-left: 0.7em;
+    margin-left: 1em;
   }
   .footer-2 p {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -282,19 +288,20 @@ main {
   }
 
   /* Footer styles */
-  .footer {
-    padding: 0.5em 0;
-  }
 
-  .footer-2 {
-    padding: 0 2em;
+  .footer {
+    padding: 0.8em 0;
   }
 
   .footer .logo img {
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
+
   .footer-2 p {
     font-size: 14px;
+  }
+  .footer-2 {
+    padding: 0 1.5em;
   }
 }
 

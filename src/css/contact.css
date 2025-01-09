@@ -99,6 +99,9 @@ h4 {
   line-height: 40px;
   opacity: 0.8;
 }
+.contacts a {
+  color: rgb(36, 36, 216);
+}
 
 .contact-me {
   text-align: center;
@@ -238,16 +241,14 @@ input[type="submit"]:hover {
     border-radius: 4px;
   }
   .side-bar {
-    width: 220px;
+    width: 200px;
   }
 
   /* Main styles */
   h4 {
-    font-size: larger;
+    font-size: 38px;
   }
   .contacts {
-    display: flex;
-    flex-direction: column;
     gap: 8px;
     line-height: 40px;
     opacity: 0.8;
@@ -260,13 +261,11 @@ input[type="submit"]:hover {
 
   #send-message {
     padding: 12px 19px;
-    background-color: #234480;
     border-radius: 10px;
 
     font-size: 0.7em;
   }
   form {
-   
     padding: 11px;
     border-radius: 10px;
     width: 20%;
@@ -274,9 +273,8 @@ input[type="submit"]:hover {
   }
 
   label {
-    display: inline;
     margin-bottom: 8px;
-    font-weight: 0.3em;
+    font-weight: 0.2em;
   }
 
   input[type="text"],
@@ -284,27 +282,16 @@ input[type="submit"]:hover {
     width: 80%;
     padding: 8px;
     margin-bottom: 5px;
-    border: 1px solid #ccc;
+
     border-radius: 4px;
-    background-color: #afc3e9;
   }
 
   textarea {
-    height: 50px;
+    height: 60px;
   }
 
   input[type="submit"] {
-    background-color: #234480;
-    color: white;
     padding: 8px 18px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type="submit"]:hover {
-    background-color: #afc3e9;
-    color: black;
   }
 
   .address {
@@ -321,18 +308,24 @@ input[type="submit"]:hover {
   }
   /* Footer styles */
   .footer {
-    padding: 0.6em 0;
+    background-color: #afc3e9;
+    color: black;
+    padding: 1em 0;
+    opacity: 0.7;
   }
 
   .footer-2 {
-    padding: 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
   }
 
   .footer .logo img {
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
   .footer-2 p {
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 
@@ -376,21 +369,108 @@ input[type="submit"]:hover {
   main {
     padding: 13px;
   }
-
-  /* Footer styles */
-  .footer {
+  .header {
     padding: 0.5em 0;
   }
 
-  .footer-2 {
-    padding: 0 2em;
+  .header-2 {
+    padding: 0 1.5em;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  nav li {
+    height: 40px;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 22px;
+  }
+  li.active a {
+    border-radius: 4px;
+  }
+  .side-bar {
+    width: 180px;
+  }
+
+  /* Main styles */
+  h4 {
+    font-size: 34px;
+  }
+  .contacts {
+    gap: 8px;
+    line-height: 40px;
+    opacity: 0.8;
+  }
+
+  .contact-me {
+    margin: 15px;
+    line-height: 32px;
+  }
+
+  #send-message {
+    padding: 17px 24px;
+    border-radius: 10px;
+
+    font-size: 0.9em;
+  }
+  form {
+    padding: 11px;
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  label {
+    margin-bottom: 8px;
+    font-weight: 0.17em;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 5px;
+
+    border-radius: 4px;
+  }
+
+  textarea {
+    height: 50px;
+  }
+
+  input[type="submit"] {
+    padding: 8px 18px;
+  }
+
+  .address {
+    margin-right: 12px;
+  }
+  .address-logo {
+    gap: 7em;
+    margin: 0.7em;
+  }
+  .address-logo img {
+    max-width: 40px;
+  }
+
+  /* Footer styles */
+
+  .footer {
+    padding: 0.8em 0;
   }
 
   .footer .logo img {
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
+
   .footer-2 p {
     font-size: 14px;
+  }
+  .footer-2 {
+    padding: 0 1.5em;
   }
 }
 
@@ -403,6 +483,101 @@ input[type="submit"]:hover {
   .menu-button {
     display: block;
   }
+  .header {
+    padding: 0.7em 0;
+  }
+
+  .header-2 {
+    padding: 0 1.7em;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  nav li {
+    height: 42px;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 25px;
+  }
+  li.active a {
+    border-radius: 4px;
+  }
+  .side-bar {
+    width: 200px;
+  }
+
+  /* Main styles */
+  h4 {
+    font-size: 38px;
+  }
+  .contacts {
+    gap: 8px;
+    line-height: 40px;
+    opacity: 0.8;
+  }
+
+  .contact-me {
+    margin: 18px;
+    line-height: 35px;
+  }
+
+  #send-message {
+    padding: 12px 19px;
+    border-radius: 10px;
+
+    font-size: 0.8em;
+  }
+  form {
+    padding: 11px;
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  label {
+    margin-bottom: 8px;
+    font-weight: 0.14em;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 5px;
+
+    border-radius: 4px;
+  }
+
+  textarea {
+    height: 60px;
+  }
+
+  input[type="submit"] {
+    padding: 8px 18px;
+  }
+
+  .address {
+    margin-right: 12px;
+  }
+  .address-logo {
+    gap: 5em;
+    margin: 0.5em;
+  }
+  .address-logo img {
+    max-width: 30px;
+  }
+  /* Footer styles */
+  .footer {
+    padding: 0.6em 0;
+  }
+
+  .footer .logo img {
+    margin-left: 0.5em;
+  }
+
   .footer-2 p {
     font-size: 11px;
   }
