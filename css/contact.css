@@ -319,6 +319,7 @@ input[type="submit"]:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
+    gap: 10px;
   }
 
   .footer .logo img {
@@ -397,7 +398,7 @@ input[type="submit"]:hover {
 
   /* Main styles */
   h4 {
-    font-size: 34px;
+    font-size: 32px;
   }
   .contacts {
     gap: 8px;
@@ -449,7 +450,7 @@ input[type="submit"]:hover {
     margin-right: 12px;
   }
   .address-logo {
-    gap: 7em;
+    gap: 6em;
     margin: 0.7em;
   }
   .address-logo img {
@@ -471,6 +472,7 @@ input[type="submit"]:hover {
   }
   .footer-2 {
     padding: 0 1.5em;
+    gap: 10px;
   }
 }
 
@@ -511,7 +513,7 @@ input[type="submit"]:hover {
 
   /* Main styles */
   h4 {
-    font-size: 38px;
+    font-size: 28px;
   }
   .contacts {
     gap: 8px;
@@ -525,8 +527,8 @@ input[type="submit"]:hover {
   }
 
   #send-message {
-    padding: 12px 19px;
-    border-radius: 10px;
+    padding: 16px 24px;
+    border-radius: 7px;
 
     font-size: 0.8em;
   }
@@ -563,8 +565,9 @@ input[type="submit"]:hover {
     margin-right: 12px;
   }
   .address-logo {
-    gap: 5em;
-    margin: 0.5em;
+    gap: 4em;
+    margin: 0.4em;
+    margin-top: 10px;
   }
   .address-logo img {
     max-width: 30px;
@@ -583,5 +586,6 @@ input[type="submit"]:hover {
   }
   .footer-2 {
     padding: 0 1em;
+    gap: 10px;
   }
 }
