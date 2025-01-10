@@ -188,6 +188,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
+    gap: 10px;
   }
 
   .footer .logo img {
@@ -238,6 +239,7 @@ p {
   }
   .footer-2 {
     padding: 0 1.3em;
+    gap: 10px;
   }
 }
 
@@ -281,5 +283,6 @@ p {
   }
   .footer-2 {
     padding: 0 1.1em;
+    gap: 10px;
   }
 }
