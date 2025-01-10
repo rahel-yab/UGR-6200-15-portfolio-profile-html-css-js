@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahel-Yabebal Portfolio</title>
-    <link rel="stylesheet" href="../src/css/about.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <header class="header">
@@ -15,24 +15,30 @@
           <ul class="side-bar">
             <li onclick="hideSidebar()">
               <a href="#"
-                ><img height="30" src="images/close.png" alt="close"
+                ><img height="30" src="src/images/close.png" alt="close"
               /></a>
             </li>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="src/about.html">About</a></li>
+            <li><a href="src/projects.html">Projects</a></li>
+            <li><a href="src/skills.html">Skills</a></li>
+            <li><a href="src/contact.html">Contact</a></li>
           </ul>
           <ul class="nav-bar">
-            <li class="hideonmobile"><a href="index.html">Home</a></li>
-            <li class="hideonmobile active"><a href="about.html">About</a></li>
-            <li class="hideonmobile"><a href="projects.html">Projects</a></li>
-            <li class="hideonmobile"><a href="skills.html">Skills</a></li>
-            <li class="hideonmobile"><a href="contact.html">Contact</a></li>
+            <li class="hideonmobile active"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="src/about.html">About</a></li>
+            <li class="hideonmobile">
+              <a href="src/projects.html">Projects</a>
+            </li>
+            <li class="hideonmobile"><a href="src/skills.html">Skills</a></li>
+            <li class="hideonmobile"><a href="src/contact.html">Contact</a></li>
             <li class="menu-button" onClick="showSidebar()">
               <a href="#"
-                ><img class="menu" width="50" src="images/menu.png" alt="menu"
+                ><img
+                  class="menu"
+                  width="50"
+                  src="src/images/menu.png"
+                  alt="menu"
               /></a>
             </li>
           </ul>
@@ -57,26 +63,26 @@
             </p>
           </div>
 
-          <img src="images/aau.jpg" alt="Image of AAU" />
+          <img src="src/images/aau.jpg" alt="Image of AAU" />
         </section>
         <section class="about">
           <div class="adventure">
             <h3>Adventures</h3>
             <p>I want to try these adventures</p>
             <div>
-              <img src="images/image1(2).jpg" alt="Skydiving" />
+              <img src="src/images/image1(2).jpg" alt="Skydiving" />
             </div>
-            <div><img src="images/surfing_pic.jpg" alt="Surfing" /></div>
+            <div><img src="src/images/surfing_pic.jpg" alt="Surfing" /></div>
           </div>
           <div class="hobby">
             <h3>Hobby</h3>
-            <video src="video/reading.mp4" controls></video>
+            <video src="src/video/reading.mp4" controls></video>
             <p>Reading books is one of my hobbies.</p>
           </div>
           <div class="interest">
             <h3>Interest</h3>
             <audio controls>
-              <source src="../src/audio/music.mp3" type="audio/mpeg" />
+              <source src="src/audio/music.mp3" type="audio/mpeg" />
               Your browser does not support the audio tag.
             </audio>
             <p>I enjoy listening to music.</p>
@@ -98,16 +104,19 @@
               target="_blank"
               ><img
                 width="30"
-                src="images/linkedin_logo.png"
+                src="src/images/linkedin_logo.png"
                 alt="LinkedIn logo"
             /></a>
             <a href="https://github.com/rahel-yab" target="_blank"
-              ><img width="30" src="images/github_logo.png" alt="GitHub logo"
+              ><img
+                width="30"
+                src="src/images/github_logo.png"
+                alt="GitHub logo"
             /></a>
           </div>
         </div>
       </div>
     </footer>
-    <script src="../src/js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
